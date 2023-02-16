@@ -1,0 +1,12 @@
+.nav {
+  margin-right: -6px;
+  &_list {
+    display: flex;
+    gap: 15px;
+    color: #ff6060;
+    font-size: clamp(17px, 4.2vw, 24px);
+    &_item {
+      color: #ff6060;
+    }
+  }
+}

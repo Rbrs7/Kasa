@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/home_cover.png");
+  background-size: cover;
+  background-position-x: center;
+  height: 111px;
+  max-width: 95%;
+  margin: 25px auto;
+  padding: 10px;
+
+  p {
+    color: #ffffff;
+    font-size: clamp(32px, 8.2vw, 24px);
+    size: 24px;
+    line-height: 26px;
+    margin-left: 3%;
+  }
+}

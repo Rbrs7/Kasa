@@ -1,0 +1,24 @@
+.home{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+body{
+  max-width: 1440px;
+  margin: 5%;
+  padding-top: 10px;
+}
+
+li{
+  display: flex;
+  list-style: none;
+}
+
+a{
+  color: #ff6060;
+  text-decoration: none;
+}
