@@ -1,0 +1,14 @@
+.about_banner {
+    margin: auto;
+    display: flex;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("../assets/about_cover.png");
+    height: 223px;
+    max-width: 95%;
+    margin: 25px auto;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  
+}

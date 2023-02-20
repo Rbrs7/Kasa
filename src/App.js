@@ -5,13 +5,11 @@ import About from "./pages/About";
 import Houses from "./pages/Houses";
 import Error from "./pages/NotFound";
 import Header from "./components/Header";
-import Banner from "./components/Banner";
 
 function App() {
   return (
     <div className="home">
       <Header />
-      <Banner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

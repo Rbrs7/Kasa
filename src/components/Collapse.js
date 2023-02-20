@@ -1,0 +1,20 @@
+import arrow from "../assets/arrow.png";
+import "../styles/collapse.scss";
+
+export default function Collapse({ title, content }) {
+  return (
+    <div className="collapse">
+      <h2 className="collapse_title">
+        {title}
+        <img src={arrow} alt="display content" />
+      </h2>
+      <div className="collapse_content">
+        {Array.isArray(content)
+          ? content.map((item, id) => {
+              return <p key={id}>{item}</p>;
+            })
+          : content}
+      </div>
+    </div>
+  );
+}
