@@ -9,11 +9,7 @@ export default function Collapse({ title, content }) {
         <img src={arrow} alt="display content" />
       </h2>
       <div className="collapse_content">
-        {Array.isArray(content)
-          ? content.map((item, id) => {
-              return <p key={id}>{item}</p>;
-            })
-          : content}
+        {content}
       </div>
     </div>
   );
