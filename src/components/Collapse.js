@@ -6,7 +6,7 @@ export default function Collapse({ title, content }) {
     <div className="collapse">
       <h2 className="collapse_title">
         {title}
-        <img src={arrow} alt="display content" />
+        <img src={arrow} alt="display/hide content arrow" />
       </h2>
       <div className="collapse_content">{content}</div>
     </div>
