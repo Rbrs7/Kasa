@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    height: 170px;
+    background-color: black;
+    margin: 28px auto;
+    margin-left: -28.7px;
+    margin-bottom: -5.8%;
+    padding-right: 57.5px;
+
+    img {
+        filter: brightness(100);
+        width: 122px;
+        height: 39.44px;
+        margin-left: 7%;
+    }
+
+    p {
+        margin-left: 7%;
+        color: #fff;
+    }
+}

@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Houses from "./pages/Houses";
 import Error from "./pages/NotFound";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/logement/:id" element={<Houses />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

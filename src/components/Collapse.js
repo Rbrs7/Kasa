@@ -8,7 +8,7 @@ export default function Collapse({ title, content }) {
         {title}
         <img src={arrow} alt="display/hide content arrow" />
       </h2>
-      <div className="collapse_content">{content}</div>
+      <div className="collapse_text">{content}</div>
     </div>
   );
 }
