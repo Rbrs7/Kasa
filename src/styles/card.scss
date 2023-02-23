@@ -1,9 +1,12 @@
 .gallery_card {
+  display: block;
   position: relative;
   height: 225px;
-  width: 335px;
+  width: 90%;
+  margin: 10px auto;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 3%;
   cursor: pointer;
 
   &:hover img {

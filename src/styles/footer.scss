@@ -6,18 +6,15 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 30px;
-    height: 170px;
     background-color: black;
-    margin: 28px auto;
-    margin-left: -28.7px;
-    margin-bottom: -5.8%;
-    padding-right: 57.5px;
+    margin: 28px auto 0 auto;
 
     img {
         filter: brightness(100);
         width: 122px;
         height: 39.44px;
-        margin-left: 7%;
+        margin-left: 5%;
+        margin-top: 5%;
     }
 
     p {

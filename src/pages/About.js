@@ -5,6 +5,7 @@ import aboutData from "../data/aboutData";
 export default function About() {
   return (
     <div className="about">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></link>
       <BannerAbout />
       {aboutData.map((data) => {
         return (
