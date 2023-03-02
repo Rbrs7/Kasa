@@ -12,11 +12,24 @@
   height: 111px;
   max-width: 95%;
   padding: 10px;
+  @media screen and (min-width: 550px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    height: 160px;
+  }
 
   p {
     color: #ffffff;
     font-size: clamp(25px, 7.5vw, 24px);
     line-height: 26px;
     margin-left: 3%;
+  }
+
+  br{
+    @media screen and (min-width: 550px){
+      display: none;
+    }
   }
 }

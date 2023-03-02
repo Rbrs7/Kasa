@@ -20,15 +20,18 @@ function Collapse({ title, content }) {
         className="collapse_text"
         style={opened ? { display: "block" } : { display: "none" }}
       >
-        {content}
+        {Array.isArray(content)
+          ? content.map((item, id) => {
+              return <p key={id}>{item}</p>;
+            })
+          : content}
       </div>
     </div>
   );
 }
 
 Collapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default Collapse;

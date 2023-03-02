@@ -1,4 +1,12 @@
 .home_gallery {
   width: auto;
   margin: 0 auto;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+  padding: 10px;
+  @media screen and (min-width: 550px){
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
 }
