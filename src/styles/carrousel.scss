@@ -1,0 +1,28 @@
+.carrousel {
+  position: relative;
+  &_pictures {
+    display: flex;
+    height: 300px;
+    margin: 15px auto;
+    padding: 15px;
+
+    img {
+      max-width: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+  }
+  &_leftarrow {
+    width: 5%;
+    position: absolute;
+    left: 6%;
+    top: 45.5%;
+  }
+
+  &_rightarrow {
+    width: 5%;
+    position: absolute;
+    right: 6%;
+    top: 45.5%;
+  }
+}

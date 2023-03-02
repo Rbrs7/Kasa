@@ -1,8 +1,9 @@
 import "../styles/houses.scss";
 import { useParams } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import datas from "../data/data";
 import Collapse from "../components/Collapse";
+import Carrousel from "../components/Carrousel";
 import redStar from "../assets/red_star.png";
 import greyStar from "../assets/grey_star.png";
 
@@ -10,7 +11,13 @@ export default function Houses() {
   const currentId = useParams("id").id;
   console.log(currentId);
 
-  const [currentData] = useState(datas.filter((d) => d.id === currentId));
+  const house = datas.filter((d) => d.id === currentId);
+
+  if (house.length === 0) {
+    // erreur
+    return <div>une erreur est apparu, id introuvable</div>;
+  }
+  const currentData = house;
   console.log(currentData);
 
   const description = currentData[0].description;
@@ -22,6 +29,7 @@ export default function Houses() {
 
   return (
     <main className="house">
+      <Carrousel pictures={currentData[0].pictures} />
       <div className="house_content">
         <div className="house_infos">
           <h1>{currentData[0].title}</h1>
@@ -32,6 +40,7 @@ export default function Houses() {
             })}
           </div>
         </div>
+
         <div className="house_autor">
           <div className="house_stars">
             {[...Array(5)].map((star, index) => {
@@ -45,8 +54,14 @@ export default function Houses() {
               );
             })}
           </div>
-          <span>{name}</span>
-          <img className="house_hostPic" src={hostPic} alt="house's host"></img>
+          <div className="house_hostPic_name">
+            <span>{name}</span>
+            <img
+              className="house_hostPic"
+              src={hostPic}
+              alt="house's host"
+            ></img>
+          </div>
         </div>
       </div>
       <div className="house_collapse">
