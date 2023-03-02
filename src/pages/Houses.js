@@ -2,6 +2,7 @@ import "../styles/houses.scss";
 import { useParams } from "react-router-dom";
 import React from "react";
 import datas from "../data/data";
+import ErrorId from "../components/Error500";
 import Collapse from "../components/Collapse";
 import Carrousel from "../components/Carrousel";
 import redStar from "../assets/red_star.png";
@@ -15,7 +16,9 @@ export default function Houses() {
 
   if (house.length === 0) {
     // erreur
-    return <div>une erreur est apparu, id introuvable</div>;
+    return(
+      <ErrorId />
+    )
   }
   const currentData = house;
   console.log(currentData);
