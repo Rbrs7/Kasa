@@ -8,8 +8,11 @@
   overflow: hidden;
   margin-bottom: 3%;
   cursor: pointer;
-  @media screen and (min-width: 550px){
+  @media screen and (min-width: 800px){
     max-width: 26%;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1450px){
+    max-width: 35%;
   }
 
   &:hover img {

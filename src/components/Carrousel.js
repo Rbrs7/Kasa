@@ -29,7 +29,6 @@ function Carroussel({ pictures }) {
         <img
           src={pictures[currentIndex]}
           alt="House's pictures"
-          style={{width: "345px" }}
         />
       </div>
       <img

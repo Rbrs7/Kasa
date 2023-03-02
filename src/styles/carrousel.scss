@@ -1,15 +1,22 @@
 .carrousel {
   position: relative;
+
   &_pictures {
     display: flex;
     height: 300px;
-    margin: 15px auto;
+    margin: 0 auto;
     padding: 15px;
 
     img {
-      max-width: 100%;
+      width: 345px;
       border-radius: 25px;
       object-fit: cover;
+
+      @media screen and (min-width: 800px){
+        width: 1300px;
+        height: 415px;
+        margin-left: 6.5%;
+      }
     }
   }
   &_leftarrow {

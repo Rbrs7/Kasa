@@ -12,7 +12,7 @@
   height: 111px;
   max-width: 95%;
   padding: 10px;
-  @media screen and (min-width: 550px){
+  @media screen and (min-width: 800px){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
   }
 
   br{
-    @media screen and (min-width: 550px){
+    @media screen and (min-width: 800px){
       display: none;
     }
   }

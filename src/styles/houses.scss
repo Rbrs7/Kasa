@@ -7,11 +7,11 @@
     flex-direction: column;
     justify-content: space-between;
     color: #ff6060;
+
     h1 {
       font-weight: 600;
       font-size: 18px;
       width: 95%;
-      margin-top: 20px;
       line-height: 25.67px;
     }
 
@@ -19,12 +19,12 @@
       font-weight: 600;
       font-size: 14px;
     }
-
   }
   &_infos {
     font-size: 16px;
     font-weight: 400;
     margin-left: 5%;
+
     button {
       color: white;
       background-color: #ff6060;
@@ -33,9 +33,6 @@
       padding: 4px 15px 4px 15px;
       margin-right: 12px;
       margin-bottom: 5%;
-      @media screen and (min-width: 550px) {
-        margin-bottom: 0;
-      }
     }
   }
   &_stars {
@@ -51,14 +48,12 @@
   &_autor {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 550px) {
-      flex-direction: column-reverse;
-      align-items: flex-end;
-      gap: 2px;
-    }
   }
 
-  &_hostPic_name{
+  &_flex {
+  }
+
+  &_hostPic_name {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -70,5 +65,10 @@
     width: 50px;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  &_collapse {
+    display: flex;
+    flex-direction: column;
   }
 }
