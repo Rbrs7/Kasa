@@ -23,26 +23,28 @@ function Carroussel({ pictures }) {
       }
     }
   };
+
   return (
     <div className="carrousel">
       <div className="carrousel_pictures">
-        <img
-          src={pictures[currentIndex]}
-          alt="House's pictures"
-        />
+        <img src={pictures[currentIndex]} alt="House's pictures" />
       </div>
-      <img
-        className="carrousel_leftarrow"
-        src={leftArrow}
-        alt="previous pictures"
-        onClick={clickHandler(false)}
-      />
-      <img
-        className="carrousel_rightarrow"
-        src={rightArrow}
-        alt="next pictures"
-        onClick={clickHandler(true)}
-      />
+      {pictures.length > 1 && (
+        <img
+          className="carrousel_leftarrow"
+          src={leftArrow}
+          alt="previous pictures"
+          onClick={clickHandler(false)}
+        />
+      )}
+      {pictures.length > 1 && (
+        <img
+          className="carrousel_rightarrow"
+          src={rightArrow}
+          alt="next pictures"
+          onClick={clickHandler(true)}
+        />
+      )}
     </div>
   );
 }
