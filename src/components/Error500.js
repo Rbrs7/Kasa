@@ -10,7 +10,7 @@ export default function ErrorId() {
       ></link>
       <h1>500</h1>
       <div className="error_txt">
-        <p>Oups! La location </p>
+        <p>Oups! La location que </p>
         <p>vous demandez n'existe pas.</p>
       </div>
       <Link className="homeReturn" to="/">

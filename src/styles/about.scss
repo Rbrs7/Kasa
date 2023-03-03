@@ -16,3 +16,13 @@
       object-fit: cover;
     }
 }
+.about_collapse {
+  @media screen and (min-width: 800px) {
+    margin-left: 15.5%;
+    max-width: 70%;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1450px) {
+    margin-left: 10%;
+    max-width: 80%;
+  }
+}

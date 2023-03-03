@@ -4,9 +4,7 @@
   border-radius: 5px;
   margin-bottom: 5%;
   width: 91%;
-  @media screen and (min-width: 800px) {
-    max-width: 67%;
-  }
+
   @media screen and (min-width: 800px) and (max-width: 1450px){
     max-width: 75%;
   }
@@ -28,6 +26,7 @@
     color: #ff6060;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
     letter-spacing: 1px;
     font-weight: 400;
     size: 12px;

@@ -16,9 +16,7 @@ export default function Houses() {
 
   if (house.length === 0) {
     // erreur
-    return(
-      <ErrorId />
-    )
+    return <ErrorId />;
   }
   const currentData = house;
   console.log(currentData);
@@ -38,11 +36,9 @@ export default function Houses() {
           <div className="house_infos">
             <h1>{currentData[0].title}</h1>
             <p>{currentData[0].location}</p>
-            <div>
-              {currentData[0].tags.map((tag, index) => {
-                return <button key={index}>{tag}</button>;
-              })}
-            </div>
+            {currentData[0].tags.map((tag, index) => {
+              return <button key={index}>{tag}</button>;
+            })}
           </div>
 
           <div className="house_autor">

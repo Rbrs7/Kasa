@@ -1,5 +1,6 @@
 .carrousel {
   position: relative;
+  margin-bottom: -5px;
 
   &_pictures {
     display: flex;
@@ -12,10 +13,13 @@
       border-radius: 25px;
       object-fit: cover;
 
-      @media screen and (min-width: 800px){
-        width: 1300px;
+      @media screen and (min-width: 800px) {
+        width: 1380px;
         height: 415px;
-        margin-left: 6.5%;
+        margin-left: 3.6%;
+      }
+      @media screen and (min-width: 800px) and (max-width: 1450px) {
+        max-width: 730px;
       }
     }
   }
@@ -24,6 +28,13 @@
     position: absolute;
     left: 6%;
     top: 45.5%;
+    @media screen and (min-width: 800px) {
+      width: 3%;
+      top: 60%;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1450px) {
+      top: 66%;
+    }
   }
 
   &_rightarrow {
@@ -31,5 +42,12 @@
     position: absolute;
     right: 6%;
     top: 45.5%;
+    @media screen and (min-width: 800px) {
+      width: 3%;
+      top: 60%;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1450px) {
+      top: 66%;
+    }
   }
 }
