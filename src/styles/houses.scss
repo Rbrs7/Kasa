@@ -2,7 +2,7 @@
   &_content {
     color: #ff6060;
 
-    @media screen and (min-width: 800px) and (max-width: 1450px) {
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
       margin-top: 7%;
     }
     h1 {
@@ -31,6 +31,9 @@
       display: flex;
       justify-content: space-between;
     }
+    @media screen and (min-width: 1000px) and (max-width: 1450px) {
+      margin-top: 2.5%;
+    }
   }
 
   &_infos {
@@ -40,7 +43,7 @@
     @media screen and (min-width: 800px) {
       margin-top: 12%;
     }
-    @media screen and (min-width: 800px) and (max-width: 1450px) {
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
       margin-top: 14%;
     }
 
@@ -79,6 +82,10 @@
       flex-direction: column-reverse;
       margin-right: 5%;
     }
+
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+      margin-top: 16%;
+    }
   }
 
   &_hostPic_name {
@@ -105,9 +112,14 @@
       margin-top: 1%;
     }
 
-    @media screen and (min-width: 800px) and (max-width: 1450px) {
-      margin-top: 2%;
-      margin-bottom: -8%;
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+      margin-top: 6.5%;
+    }
+    @media screen and (min-width: 350px) and (max-width: 400px) {
+      margin-bottom: 19.1%;
+    }
+    @media screen and (min-width: 400px) and (max-width: 550px) {
+      margin-bottom: 32.2%;
     }
   }
 
