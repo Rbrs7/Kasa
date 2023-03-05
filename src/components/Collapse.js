@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 function Collapse({ title, content }) {
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
   return (
     <div className="collapse">
       <h2
