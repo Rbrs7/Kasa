@@ -1,4 +1,5 @@
 .house {
+  min-height: 77vh;
   &_content {
     color: #ff6060;
 
@@ -110,16 +111,6 @@
       display: flex;
       flex-direction: row;
       margin-top: 1%;
-    }
-
-    @media screen and (min-width: 800px) and (max-width: 1000px) {
-      margin-top: 6.5%;
-    }
-    @media screen and (min-width: 350px) and (max-width: 400px) {
-      margin-bottom: 19.1%;
-    }
-    @media screen and (min-width: 400px) and (max-width: 550px) {
-      margin-bottom: 32.2%;
     }
   }
 

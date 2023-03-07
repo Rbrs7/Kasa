@@ -1,20 +1,24 @@
-.about_banner {
-    display: flex;
-    margin: 22px 12px 25px 20px;
-    @media screen and (min-width: 800px) {
-      max-width: 92.4%;
-      margin-left: 4.6%;
-    }
-    @media screen and (min-width: 800px) and (max-width: 1000px){
-      padding-bottom: 8%;
-    }
+.about {
+  min-height: 74vh;
+}
 
-    img {
-      border-radius: 15px;
-      width: 98%;
-      height: 229px;
-      object-fit: cover;
-    }
+.about_banner {
+  display: flex;
+  margin: 22px 12px 25px 20px;
+  @media screen and (min-width: 800px) {
+    max-width: 92.4%;
+    margin-left: 4.6%;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
+    padding-bottom: 8%;
+  }
+
+  img {
+    border-radius: 15px;
+    width: 98%;
+    height: 229px;
+    object-fit: cover;
+  }
 }
 .about_collapse {
   @media screen and (min-width: 800px) {
@@ -24,12 +28,5 @@
   @media screen and (min-width: 800px) and (max-width: 1000px) {
     margin-left: 10%;
     max-width: 80%;
-    margin-bottom: 12.6%;
-  }
-  @media screen and (min-width: 400px) and (max-width: 550px) {
-    margin-bottom: 16.3%;
-  }
-  @media screen and (min-width: 300px) and (max-width: 400px) {
-    margin-bottom: 13.6%;
   }
 }
