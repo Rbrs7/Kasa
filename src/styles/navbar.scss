@@ -8,6 +8,12 @@
     @media screen and (min-width: 800px){
       gap: 50px;
     }
+    &_item:nth-child(1):active{
+      border-bottom: #ff6060 2px solid;
+    }
+    &_item:nth-child(2):active{
+      border-bottom: #ff6060 2px solid;
+    }
 
     &_item {
       color: #ff6060;
