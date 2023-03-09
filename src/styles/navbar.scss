@@ -5,18 +5,22 @@
     gap: 15px;
     color: #ff6060;
     font-size: clamp(17px, 4.2vw, 20px);
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 800px) {
       gap: 50px;
     }
-    &_item:nth-child(1):active{
+    /*     &_item:nth-child(1):active{
       border-bottom: #ff6060 2px solid;
     }
     &_item:nth-child(2):active{
       border-bottom: #ff6060 2px solid;
-    }
+    } */
 
     &_item {
       color: #ff6060;
+
+      &.active a {
+        border-bottom: #ff6060 2px solid;
+      }
     }
   }
 }

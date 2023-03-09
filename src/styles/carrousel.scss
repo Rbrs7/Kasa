@@ -57,3 +57,15 @@
     }
   }
 }
+
+.current_picture {
+  position: absolute;
+  font-size: 15px;
+  left: 50%;
+  bottom: 27px;
+  color: white;
+
+  @media screen and (min-width: 800px) {
+    top: 395px;
+  }
+}

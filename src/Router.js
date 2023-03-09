@@ -5,6 +5,7 @@ import Houses from "./pages/Houses";
 import Error from "./pages/NotFound";
 
 function Router() {
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

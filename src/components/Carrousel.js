@@ -19,7 +19,6 @@ function Carroussel({ pictures }) {
       if (currentIndex > 0) {
         setCurrentIndex(currentIndex - 1);
       } else {
-        setCurrentIndex(pictures.length - 1);
       }
     }
   };
@@ -28,6 +27,9 @@ function Carroussel({ pictures }) {
     <div className="carrousel">
       <div className="carrousel_pictures">
         <img src={pictures[currentIndex]} alt="House's pictures" />
+        <span className="current_picture">
+          {currentIndex + 1} / {pictures.length}
+        </span>
       </div>
       {pictures.length > 1 && (
         <img
